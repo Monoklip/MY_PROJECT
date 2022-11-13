@@ -1,0 +1,79 @@
+.admin-account-delete{
+    width: 740px;
+    text-align: center;
+    color:  brown;
+
+    h1{
+        border-bottom: 1px solid grey;
+    }
+
+    .admin-account-delete-list{
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid grey;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .admin-account-delete-list-btnAllMoto{
+            width: 300px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid grey;
+
+            button{
+                background: orange;
+                color: black;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover{
+                    background: rgb(158, 103, 1);
+                }
+            }
+        }
+
+        .admin-account-delete-list-settingMoto{
+            width: 100%;
+
+            .admin-account-list-title{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            
+            .admin-account-list-select{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+    
+                select{
+                    width: 200px;
+                    height: 25px;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        button{
+            width: 150px;
+            height: 25px;
+            color: white;
+            background: red;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover{
+                background: rgb(129, 0, 0);
+            }
+
+        }
+    }
+    .admin-account-delete-item{
+        width: 100%;
+    }
+}

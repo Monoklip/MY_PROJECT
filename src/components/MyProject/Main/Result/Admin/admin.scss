@@ -1,0 +1,50 @@
+.admin{
+    width: 300px;
+    min-height: 220px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+
+    h1{
+        text-align: center;
+    }
+
+    p{
+        margin-top: 10px;
+    }
+
+    input{
+        width: 200px;
+        height: 25px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .admin-btn{
+        width: 200px;
+        height: 25px;
+        margin-top: 20px;
+        background: green;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover{
+            background: rgb(0, 77, 0);
+        }
+    }
+    .admin-btn-registr{
+        border: none;
+        background: white;
+        color: rgb(0, 115, 247);
+        margin: 5px 0;
+        cursor: pointer;
+
+        &:hover{
+            color: red;
+        }
+    }
+}

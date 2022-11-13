@@ -1,0 +1,52 @@
+.user-account-postCar{
+    width: 250px;
+    // height: 600px;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    text-align: center;
+
+    h1{
+        color: brown;
+        margin-bottom: 5px;
+        border-bottom: 1px solid grey;
+    }
+
+    select {
+        width: 220px;
+        height: 25px;
+        margin: 5px 0;
+        font-size: 16px;
+        font-style: italic;
+    }
+    input {
+        width: 220px;
+        height: 30px;
+        margin: 5px 0;
+        font-size: 16px;
+        font-style: italic;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    textarea{
+        width: 220px;
+        height: 70px;
+        margin: 5px 0;
+        font-size: 14px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .user-account-postCar-btn{
+        width: 220px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        background: green;
+        color: white;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        &:hover{
+            background: rgb(0, 82, 0);
+        }
+    }
+}

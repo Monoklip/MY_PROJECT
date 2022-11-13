@@ -1,0 +1,18 @@
+{
+  "cars": [],
+  "truck": [],
+  "moto": [],
+  "trailer": [],
+  "machinery": [],
+  "agricultural": [],
+  "bus": [],
+  "boat": [],
+  "users": [
+    {
+      "name": "lol",
+      "login": "lol",
+      "password": "lol",
+      "id": 1
+    }
+  ]
+}
