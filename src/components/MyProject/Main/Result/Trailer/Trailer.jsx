@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./trailer.scss";
 import NoneTrailer from "./NoneAuto/NoneTrailer";
 import YearsTrailer from "./YearsTrailer/YearsTrailer";
 import ListTrailer from "./ListTrailer/ListTrailer";
@@ -61,7 +60,7 @@ const Trailer = () => {
     return (
         <div className="auto">
             <div className="auto-search">
-                <h1 className="auto-search-title">Пошук:</h1>
+                <h1 className="auto-search-title">Пошук Прицепів:</h1>
                 <div className="auto-search-nameAuto">
                     <label>Виберіть марку:</label>
                     <br />

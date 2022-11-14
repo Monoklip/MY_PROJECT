@@ -100,7 +100,7 @@ const AdminAccountMotoPost = (props: { urlAdmin: any }) => {
     console.log(props.urlAdmin);
 
     return (
-        <div className="admin-account-postMoto">
+        <div className="admin-account-postCar">
             <h1>Добавити Мотоцикл</h1>
             <p>
                 <span style={{ color: "red" }}>* </span>Введіть марку:
@@ -146,7 +146,7 @@ const AdminAccountMotoPost = (props: { urlAdmin: any }) => {
             <p>Додаткова інформація:</p>
             <textarea onChange={handlePostCarInfoChange} />
             <button
-                className="admin-account-postMoto-btn"
+                className="admin-account-postCar-btn"
                 onClick={postAdminCar}
             >
                 Добавити

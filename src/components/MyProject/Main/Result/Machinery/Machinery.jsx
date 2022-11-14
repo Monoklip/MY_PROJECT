@@ -5,7 +5,6 @@ import MachineryJcb from "./Machinery-Jcb/MachineryJcb";
 import MachineryKamaz from "./Machinery-Kamaz/MachineryKamaz";
 import MachineryMan from "./Machinery-Man/MachineryMan";
 import MachineryZil from "./Machinery-Zil/MachineryZil";
-import "./machinery.scss";
 import NoneMachinery from "./NoneMachinery/NoneMachinery";
 import YearsMachinery from "./YearsMachinery/YearsMachinery";
 
@@ -61,7 +60,7 @@ const Machinery = () => {
     return (
         <div className="auto">
             <div className="auto-search">
-                <h1 className="auto-search-title">Пошук:</h1>
+                <h1 className="auto-search-title">Пошук Спецтехніки:</h1>
                 <div className="auto-search-nameAuto">
                     <label>Виберіть марку:</label>
                     <br />

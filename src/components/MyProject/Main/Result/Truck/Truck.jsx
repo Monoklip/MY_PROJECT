@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./truck.scss";
 import ListTruck from "./ListTruck/ListTruck";
 import YearsTruck from "./YearsTruck/YearsTruck";
 import NoneTruck from "./NoneTruck/NoneTruck";
@@ -63,7 +62,7 @@ const Truck = () => {
     return (
         <div className="auto">
             <div className="auto-search">
-                <h1 className="auto-search-title">Пошук:</h1>
+                <h1 className="auto-search-title">Пошук Вантажівок:</h1>
                 <div className="auto-search-nameAuto">
                     <label>Виберіть марку:</label>
                     <br />

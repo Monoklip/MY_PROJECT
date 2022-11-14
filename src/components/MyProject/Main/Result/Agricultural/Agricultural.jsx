@@ -4,7 +4,6 @@ import AgriculturalClaas from "./Agricultural-Claas/AgriculturalClaas";
 import AgriculturalKubota from "./Agricultural-Kubota/AgriculturalKubota";
 import AgriculturalNewHolland from "./Agricultural-New-Holland/AgriculturalNewHolland";
 import AgriculturalYanmar from "./Agricultural-Yanmar/AgriculturalYanmar";
-import "./agricultural.scss";
 import ListAgricultural from "./ListAgricultural/ListAgricultural";
 import NoneAgricultural from "./NoneAgricultural/NoneAgricultural";
 import YearsAgricultural from "./YearsAgricultural/YearsAgricultural";
@@ -61,7 +60,7 @@ const Agricultural = () => {
     return (
         <div className="auto">
             <div className="auto-search">
-                <h1 className="auto-search-title">Пошук:</h1>
+                <h1 className="auto-search-title">Пошук Сільгосптехніки:</h1>
                 <div className="auto-search-nameAuto">
                     <label>Виберіть марку:</label>
                     <br />

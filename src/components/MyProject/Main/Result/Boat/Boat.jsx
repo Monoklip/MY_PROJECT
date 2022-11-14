@@ -3,7 +3,6 @@ import BoatPowerboat from "./Boat-Powerboat/BoatPowerboat";
 import BoatShark from "./Boat-Shark/BoatShark";
 import BoatTracker from "./Boat-Tracker/BoatTracker";
 import BoatYamaha from "./Boat-Yamaha/BoatYamaha";
-import "./boat.scss";
 import ListBoat from "./ListBoat/ListBoat";
 import NoneBoat from "./NoneBoat/NoneBoat";
 import YearsBoat from "./YearsBoat/YearsBoat";
@@ -60,7 +59,7 @@ const Boat = () => {
     return (
         <div className="auto">
             <div className="auto-search">
-                <h1 className="auto-search-title">Пошук:</h1>
+                <h1 className="auto-search-title">Пошук Катерів:</h1>
                 <div className="auto-search-nameAuto">
                     <label>Виберіть марку:</label>
                     <br />

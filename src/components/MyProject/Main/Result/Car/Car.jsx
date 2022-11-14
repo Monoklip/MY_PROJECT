@@ -1,10 +1,10 @@
 import { useState } from "react";
+import '../../../Style/AutoSearch/auto-search.scss';
 import Audi from "./Audi/Audi";
 import Bmw from "./Bmw/Bmw";
 import Ford from "./Ford/Ford";
 import Honda from "./Honda/Honda";
 import Kia from "./Kia/Kia";
-import "./car.scss";
 import Mercedes from "./Mercedes/Mercedes";
 import NoneAuto from "./NoneAuto/NoneAuto";
 import Opel from "./Opel/Opel";
@@ -69,7 +69,7 @@ const Car = () => {
     return (
         <div className="auto">
             <div className="auto-search">
-                <h1 className="auto-search-title">Пошук:</h1>
+                <h1 className="auto-search-title">Пошук автомобіля:</h1>
                 <div className="auto-search-nameAuto">
                     <label>Виберіть марку:</label>
                     <br />

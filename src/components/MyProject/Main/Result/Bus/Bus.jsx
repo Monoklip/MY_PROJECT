@@ -5,7 +5,6 @@ import BusMercedes from "./Bus-Mercedes/BusMercedes";
 import BusNeoplan from "./Bus-Neoplan/BusNeoplan";
 import BusRenault from "./Bus-Renault/BusRenault";
 import BusSetra from "./Bus-Setra/BusSetra";
-import "./bus.scss";
 import ListBus from "./ListBus/ListBus";
 import NoneBus from "./NoneBus/NoneBus";
 import YearsBus from "./YearsBus/YearsBus";
@@ -62,7 +61,7 @@ const Bus = () => {
     return (
         <div className="auto">
             <div className="auto-search">
-                <h1 className="auto-search-title">Пошук:</h1>
+                <h1 className="auto-search-title">Пошук Автобусів:</h1>
                 <div className="auto-search-nameAuto">
                     <label>Виберіть марку:</label>
                     <br />
