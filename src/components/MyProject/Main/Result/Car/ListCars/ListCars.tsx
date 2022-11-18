@@ -1,0 +1,80 @@
+import "./list-cars.scss";
+import { Link } from 'react-router-dom';
+
+const ListCars = (props: {
+    elem?: any;
+    nameAuto: string;
+    modelAuto: string;
+    yearAuto: number;
+    priceAutoMin?: number;
+    priceAutoMax?: number;
+    id: number;
+}) => {
+    const { name, model, year, price, km, image, id } = props.elem;
+
+    const { nameAuto, modelAuto, yearAuto, priceAutoMin, priceAutoMax } = props;
+
+    if (name === nameAuto && nameAuto !== "none") {
+        if (model === modelAuto && modelAuto !== "all") {
+            return (
+                <a className="list-car">
+                    <div className="list-car-image">
+                        <img src={`${image}`} alt="" />
+                    </div>
+                    <hr />
+                    <div className="list-car-info">
+                        <p>
+                            {name} {model} <span className="year">{year}</span>
+                        </p>
+                        <p>
+                            <span className="price">{price} $</span>
+                            <span className="km">{km} тис.км</span>
+                        </p>
+                    </div>
+                </a>
+            );
+        } else if (modelAuto === "all") {
+            return (
+                <div className="list-car">
+                    <div className="list-car-image">
+                        <img src={`${image}`} alt="" />
+                    </div>
+                    <hr />
+                    <div className="list-car-info">
+                        <p>
+                            {name} {model} <span className="year">{year}</span>
+                        </p>
+                        <p>
+                            <span className="price">{price} $</span>
+                            <span className="km">{km} тис.км</span>
+                        </p>
+                    </div>
+                </div>
+            );
+        } else {
+            return <h1>Нажаль таких авто не знайдено</h1>;
+        }
+    } else if (nameAuto === "none") {
+        return (
+            <>
+                <Link to={`/car/${name+'-'+model+'-'+year+'-'+id}`} className="list-car">
+                    <div className="list-car-image">
+                        <img src={`${image}`} alt="" />
+                    </div>
+                    <hr />
+                    <div className="list-car-info">
+                        <p>
+                            {name} {model} <span className="year">{year}</span>
+                        </p>
+                        <p>
+                            <span className="price">{price} $</span>
+                            <span className="km">{km} тис.км</span>
+                        </p>
+                    </div>
+                </Link>
+            </>
+        );
+    }
+};
+
+export default ListCars;

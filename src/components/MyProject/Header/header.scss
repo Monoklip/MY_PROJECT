@@ -1,0 +1,97 @@
+header{
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid grey;
+
+    .header-logo{
+        width: 300px;
+
+        .header-logo-logotyp{
+            width: 200px;
+    
+            .header-logo-logotyp-image{
+                width: 300px;
+                height: 120px;
+                background-image: url('https://cdn.xxl.thumbs.canstockphoto.fr/bleu-auto-sport-super-cliparts-vectoris%C3%A9s_csp14655362.jpg');
+                background-position: center;
+            }
+        }
+    }
+    
+    .header-phone{
+        width: 380px;
+        text-align: center;
+
+        p{
+            margin: 5px 0;
+            color: green;
+        }
+        a{
+            font-size: 20px;
+            color: brown;
+
+            &:hover{
+                color: rgb(255, 47, 47);
+            }
+        }
+        .header-phone-name{
+            font-size: 20px;
+            color: blue;
+        }
+    }
+    .header-btns{
+        width: 160px;
+
+        .header-btns-singIn{
+            width: 140px;
+            height: 30px;
+            background: orange;
+            border: none;
+            border-radius: 10px;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+    
+            &:hover{
+                background: rgb(155, 101, 1);
+            }
+        }
+
+        .header-btns-search{
+            width: 140px;
+            height: 30px;
+            background: green;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+    
+            &:hover{
+                background: rgb(0, 78, 0);
+            }
+        }
+    }
+    
+    .header-singIn{
+        width: 200px;
+        height: 120px;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .header-image{
+        width: 200px;
+        height: 120px;
+        padding: 5px;
+        box-sizing: border-box;
+
+        img{
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.auto {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+
+    .auto-search {
+        width: 250px;
+        min-height: 410px;
+        border: 1px solid grey;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin-top: 5px;
+
+        .auto-search-title {
+            text-align: center;
+            border-bottom: 1px solid grey;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        .auto-search-nameAuto {
+            label {
+                margin-left: 70px;
+                text-align: center;
+            }
+            select {
+                width: 220px;
+                height: 25px;
+                margin: 10px 15px;
+                font-size: 16px;
+                font-style: italic;
+            }
+        }
+        .auto-search-modelAuto {
+            label {
+                margin-left: 70px;
+                text-align: center;
+            }
+            select {
+                width: 220px;
+                height: 30px;
+                margin: 10px 15px;
+                font-size: 16px;
+                font-style: italic;
+            }
+        }
+        .auto-search-yearAuto {
+            label {
+                margin-left: 70px;
+                text-align: center;
+            }
+            select {
+                width: 220px;
+                height: 30px;
+                margin: 10px 15px;
+                font-size: 16px;
+                font-style: italic;
+            }
+        }
+        .auto-search-priceAuto {
+            label {
+                margin-left: 70px;
+                text-align: center;
+            }
+            input {
+                width: 220px;
+                height: 30px;
+                margin: 10px 15px;
+                font-size: 16px;
+                font-style: italic;
+                padding: 0 10px;
+                box-sizing: border-box;
+            }
+        }
+        .auto-search-btn-search {
+            width: 220px;
+            height: 30px;
+            margin: 10px 15px;
+            background: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background: rgb(0, 100, 0);
+            }
+        }
+    }
+    .auto-result{
+        width: 75%;
+        border-radius: 5px;
+    }
+}

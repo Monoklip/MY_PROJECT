@@ -1,0 +1,57 @@
+.admin-account{
+    width: 1040px;
+    border: 1px solid grey;
+    margin-top: 20px;
+    border-radius: 5px;
+
+    .admin-account-catalog{
+        width: 100%;
+        height: 85px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid grey;
+        padding: 5px;
+        box-sizing: border-box;
+
+        h1{
+            font-size: 20px;
+        }
+
+        .admin-account-catalog-icon{
+            width: 100px;
+            height: 75px;
+            border-radius: 10px;
+            text-align: center;
+            color: brown;
+            border: none;
+            background: white;
+
+            &:hover{
+                background: grey;
+                color: white;
+                cursor: pointer;
+            }
+
+            .admin-account-catalog-icon-image{
+                width: 80px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                img{
+                    height: 100%;
+                    margin-left: 15px;
+                }
+            }
+
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+    .admin-account-seting{
+        display: flex;
+    }
+}

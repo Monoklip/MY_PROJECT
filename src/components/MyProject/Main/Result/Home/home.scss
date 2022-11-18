@@ -1,0 +1,68 @@
+.carousel-root{
+    width: 50%;
+}
+
+.carousel.carousel-slider {
+    border-radius: 20px;
+}
+.carousel .slider-wrapper{
+    width: 100%;
+}
+
+.home{
+    width: 100%;
+    font-style: italic;
+    margin-top: 20px;
+
+    .home-car{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        border-bottom: 1px solid grey;
+
+        .home-car-info{
+            width: 50%;
+            padding: 0 30px;
+            box-sizing: border-box;
+
+            h1{
+                text-align: center;
+            }
+            p{
+                font-family: inherit;
+                font-size: 18px;
+                margin-top: 5px;
+                color: rgb(100, 100, 100);
+            }
+            .home-car-info-characteristic{
+                margin: 20px 0;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                text-align: center;
+
+                p{
+                    color: brown;
+
+                    span{
+                        color: blue;
+                    }
+                }
+            }
+            a{
+                .home-car-info-btn{
+                    width: 300px;
+                    height: 40px;
+                    background: green;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    &:hover{
+                        background: rgb(0, 83, 0);
+                    }
+                }
+            }
+        }
+    }
+}

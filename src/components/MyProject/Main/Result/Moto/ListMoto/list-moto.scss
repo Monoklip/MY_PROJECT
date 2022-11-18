@@ -1,0 +1,55 @@
+.list-car{
+    width: 255px;
+    height: 250px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 5px 0;
+    float: left;
+    margin: 5px 0;
+    margin-left: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    .list-car-image{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 5px;
+        }
+    }
+    .list-car-info{
+        width: 100%;
+        height: 20%;
+
+        p{
+            margin-top: 5px;
+            width: 100%;
+            color: blue;
+            display: flex;
+            justify-content: space-between;
+
+            .year{
+                color: black;
+            }
+            .price{
+                color: green;
+                font-weight: bold;
+            }
+            .km{
+                color: red;
+            }
+        }
+    }
+}
+.errorSearchCar{
+    text-align: center;
+    color: brown;
+    font-size: 20px;
+}
