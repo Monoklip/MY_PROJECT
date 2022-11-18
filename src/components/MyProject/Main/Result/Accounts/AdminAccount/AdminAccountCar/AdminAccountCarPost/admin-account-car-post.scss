@@ -36,6 +36,13 @@
         padding: 0 10px;
         box-sizing: border-box;
     }
+    .numberValid:valid{
+        color: green;
+    }
+    .numberValid:invalid{
+        color: red;
+    }
+    
     .admin-account-postCar-btn{
         width: 220px;
         height: 30px;

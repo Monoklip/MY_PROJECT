@@ -35,6 +35,12 @@
         padding: 0 10px;
         box-sizing: border-box;
     }
+    input[type='tel']:valid{
+        color: green;        
+    }
+    input[type='tel']:invalid{
+        color: red;        
+    }
     .user-account-postCar-btn{
         width: 220px;
         height: 30px;

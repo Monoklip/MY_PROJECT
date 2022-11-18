@@ -1,12 +1,14 @@
 import "./list-cars.scss";
+import { Link } from 'react-router-dom';
 
 const ListCars = (props: {
     elem?: any;
-    nameAuto?: string;
-    modelAuto?: string;
-    yearAuto?: number;
+    nameAuto: string;
+    modelAuto: string;
+    yearAuto: number;
     priceAutoMin?: number;
     priceAutoMax?: number;
+    id: number;
 }) => {
     const { name, model, year, price, km, image, id } = props.elem;
 
@@ -55,7 +57,7 @@ const ListCars = (props: {
     } else if (nameAuto === "none") {
         return (
             <>
-                <div className="list-car">
+                <Link to={`/car/${name+'-'+model+'-'+year+'-'+id}`} className="list-car">
                     <div className="list-car-image">
                         <img src={`${image}`} alt="" />
                     </div>
@@ -69,7 +71,7 @@ const ListCars = (props: {
                             <span className="km">{km} тис.км</span>
                         </p>
                     </div>
-                </div>
+                </Link>
             </>
         );
     }

@@ -22,6 +22,7 @@ const UserAccountCarPost = (props: { dataUser: { login: string } }) => {
     const [postCarKm, setPostCarKm] = useState(0);
     const [postCarImage, setPostCarImage] = useState("");
     const [postCarInfo, setPostCarInfo] = useState("");
+    const [postCarPhone, setPostCarPhone] = useState(0);
 
     const handlePostCarNameChange = (event: {
         target: { value: SetStateAction<string> };
@@ -65,6 +66,12 @@ const UserAccountCarPost = (props: { dataUser: { login: string } }) => {
         setPostCarInfo(event.target.value);
     };
 
+    const handlePostCarPhoneChange = (event: {
+        target: { value: SetStateAction<string> };
+    }) => {
+        setPostCarPhone(event.target.value as unknown as number);
+    };
+
     const personId = () => {
         return props.dataUser.login;
     };
@@ -91,6 +98,7 @@ const UserAccountCarPost = (props: { dataUser: { login: string } }) => {
                         image: postCarImage,
                         info: postCarInfo,
                         personId: personId(),
+                        phone: postCarPhone
                     }),
                     headers: {
                         "Content-Type": "application/json",
@@ -152,6 +160,8 @@ const UserAccountCarPost = (props: { dataUser: { login: string } }) => {
             <br />
             <p>Додаткова інформація про авто:</p>
             <textarea onChange={handlePostCarInfoChange} />
+            <p>Введіть номер телефону:</p>
+            <input type="tel" pattern="[+][3][8][(][0-9]{3}[)][0-9]{3}-[0-9]{2}-[0-9]{2}" required  className="numberValid" placeholder="+38(063)367-22-92" onChange={handlePostCarPhoneChange}/>
             <button className="user-account-postCar-btn" onClick={postUserCar}>
                 Добавити авто
             </button>
